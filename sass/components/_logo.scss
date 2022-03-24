@@ -1,0 +1,27 @@
+.logo {
+    display: block;
+
+font-family: "Raleway", sans-serif;
+
+font-weight: 700;
+font-size: 24px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #2196F3;
+
+  @include desk {
+    text-align: start;
+    font-size: 26px;
+    line-height: 1.19;
+    }}
+  
+  .logo__dark {
+    color: #000000;
+  }
+  
+  .logo__light {
+    color: #ffffff;
+  }
+
+ 

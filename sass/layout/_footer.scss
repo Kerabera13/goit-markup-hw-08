@@ -1,0 +1,128 @@
+.footer {
+    background-color: var(--backfound-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__container {
+  text-align: center;
+
+  @include desk{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  @include desk {
+    text-align: start;
+  }
+  }}
+
+  .footer__tab{
+    @include tab{
+    display: flex;
+    justify-content: space-between;
+   padding-right:75px ;
+   padding-left: 75px;}
+
+    @include desk{
+    display: flex;
+    align-items: baseline; 
+    padding-right: 0;
+   padding-left: 0;}
+  }
+
+  .footer .logo {
+    margin-bottom: 20px;
+  }
+  
+  .address {
+    font-style: normal;
+    margin-bottom: 9px;
+    
+  }
+  
+  .adress--color {
+    color: var(--additional-color);
+  }
+  
+  .address-list__link:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+  }
+  
+  .address-list__link{
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);}
+  }
+  
+  
+  .footer__address{
+    @include desk {
+    margin-right: 70px;
+    flex-grow: 1;
+  }}
+
+  .footer-section{
+    @include tab {
+  &+&{margin-left: 93px;}
+  }}
+
+  .footer-section__text {
+  margin-top: 60px;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--additional-color);
+
+  @extend %bold-text;
+    }
+  .footer-section__text--margin{
+      @include tab{
+        margin-top: 0;
+      }
+    }
+  
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-list__item {
+    &+&{ margin-left: 10px;}
+   
+  }
+  
+  .footer-social-list__link {
+    width: 44px;
+    height: 44px;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @extend %align-list;
+    justify-content: center;
+    color: var(--additional-color);
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--additional-color);
+  }
+  }
+  .footer-social-list__icon {
+    fill: currentColor;
+  }
+  
+  
