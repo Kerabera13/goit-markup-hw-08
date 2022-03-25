@@ -7,6 +7,9 @@
   }}
 
   .gallery__item {
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 30px;
 
     @include tab {
@@ -24,7 +27,12 @@
   }
 
   .gallery__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+  
+    // display: block;
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,8 +85,8 @@
     color: var(--primary-text-color);
   }
   .gallery__border {
-  height: 100%;
     flex-grow: 1;
+    
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
