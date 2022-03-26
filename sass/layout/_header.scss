@@ -1,15 +1,23 @@
 /* -------header--------- */
 
 .header {
- border-bottom: 1px solid #ececec; }
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 1px solid #ececec;
+@include tab{
+padding-top: 0px;
+padding-bottom:0px;
+
+} }
 
 .header__container {
 @extend %align-list;
   }
 
   .header__container .logo {
+  @include tab {
     margin-right: 93px;
-  }
+  }}
 
 .navigation  {
 @extend %align-list;
@@ -85,19 +93,19 @@
 display: none;
 
 @include tab{
-  display: block;}
+display: block;}
  
-  @include desk{
-  display: flex;
-  align-items: center;
+@include desk{
+display: flex;
+align-items: center;
 }}
 
 .contacts__item+.contacts__item{
-  @include tab{
-  margin-top: 10px;
+@include tab{
+margin-top: 10px;
 }
 @include desk{
-  margin-top: 0;
+margin-top: 0;
 }}
 
 .contacts__item{
@@ -128,9 +136,7 @@ display: none;
   &:hover,
   &:focus {
   color: var(--accent-color);
-  fill: currentColor;
- 
-}
+  fill: currentColor;}
 }
 
 .contacts__icon {

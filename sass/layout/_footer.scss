@@ -10,19 +10,18 @@
   @include desk{
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-between;}
 
   @include desk {
     text-align: start;
   }
-  }}
+  }
 
   .footer__tab{
     @include tab{
     display: flex;
-    justify-content: space-between;
-   padding-right:75px ;
-   padding-left: 75px;}
+    justify-content: space-around;
+  }
 
     @include desk{
     display: flex;
@@ -36,9 +35,7 @@
   }
   
   .address {
-    font-style: normal;
-    margin-bottom: 9px;
-    
+    font-style: normal; 
   }
   
   .adress--color {
@@ -68,18 +65,27 @@
   
   
   .footer__address{
+    margin-bottom: 60px;
     @include desk {
+    margin-bottom: 0;
     margin-right: 70px;
     flex-grow: 1;
   }}
 
-  .footer-section{
-    @include tab {
+  .address-list__item{
+  &:not(:last-child){
+    margin-bottom: 8px;}
+  }
+
+ .footer-section{
+  margin-bottom: 60px;
+
+  @include tab {
+  margin-bottom: 0px;
   &+&{margin-left: 93px;}
   }}
 
   .footer-section__text {
-  margin-top: 60px;
   display: block;
   margin-bottom: 20px;
   color: var(--additional-color);

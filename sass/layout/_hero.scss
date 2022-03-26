@@ -1,5 +1,5 @@
 
-.hero__container {
+.hero {
     background-color: #2f303a;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -15,6 +15,10 @@
     padding-top: 118px;
     padding-bottom:118px;
     text-align: center;
+    @include desk{
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -32,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/header-tab.jpg);
+      url(../images/hero-img-tab-1x.jpg);
       @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -40,7 +44,7 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../images/header-tab-2x.jpg);
+      url(../images/hero-img-tab-2x.jpg);
   }
     }
 
